@@ -1,0 +1,7 @@
+@import url('./spacing.css');
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: var(--spacing-xs);
+}
