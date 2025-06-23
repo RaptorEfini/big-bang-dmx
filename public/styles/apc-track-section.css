@@ -1,0 +1,7 @@
+@import url('./spacing.css');
+
+.track-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}

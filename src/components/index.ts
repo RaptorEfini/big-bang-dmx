@@ -9,3 +9,6 @@ export * from './molecules/ClipGrid';
 export * from './molecules/KnobBank';
 export * from './molecules/FaderBank';
 export * from './molecules/TransportControls';
+export * from './organisms/APCTrackSection';
+export * from './organisms/APCMasterSection';
+export * from './organisms/APCClipSection';
