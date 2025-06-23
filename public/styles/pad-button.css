@@ -1,0 +1,17 @@
+@import url('./colors.css');
+
+.pad {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-border);
+  background: var(--color-button-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pad.active {
+  background: var(--color-primary);
+}
