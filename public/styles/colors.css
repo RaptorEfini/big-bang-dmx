@@ -1,0 +1,10 @@
+:root {
+  --color-background: #000000;
+  --color-surface: rgba(255, 255, 255, 0.1);
+  --color-text: rgba(255, 255, 255, 0.87);
+  --color-primary: #00d1ff;
+  --color-primary-dark: #129cff;
+  --color-warning: #f0eb18;
+  --color-border: #444444;
+  --color-button-bg: rgba(25, 25, 28, 0.5);
+}
