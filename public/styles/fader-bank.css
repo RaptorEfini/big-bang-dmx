@@ -1,0 +1,7 @@
+@import url('./spacing.css');
+
+.bank {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: flex-end;
+}

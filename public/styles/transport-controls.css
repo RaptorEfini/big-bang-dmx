@@ -1,0 +1,6 @@
+@import url('./spacing.css');
+
+.controls {
+  display: flex;
+  gap: var(--spacing-sm);
+}

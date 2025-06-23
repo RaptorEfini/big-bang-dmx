@@ -5,3 +5,7 @@ export * from './atoms/FaderControl';
 export * from './atoms/LedIndicator';
 export * from './atoms/LabelText';
 export * from './molecules/UiCard';
+export * from './molecules/ClipGrid';
+export * from './molecules/KnobBank';
+export * from './molecules/FaderBank';
+export * from './molecules/TransportControls';
