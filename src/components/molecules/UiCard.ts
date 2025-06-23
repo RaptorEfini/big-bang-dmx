@@ -10,21 +10,11 @@ export class UiCard extends HTMLElement {
     content.className = 'content';
     const slot = document.createElement('slot');
     content.append(slot);
-    const style = document.createElement('style');
-    style.textContent = `
-      .card {
-        border: 1px solid #444;
-        padding: 16px;
-        border-radius: 8px;
-        background: rgba(255,255,255,0.1);
-        color: white;
-      }
-      h2 {
-        margin-top: 0;
-      }
-    `;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/styles/ui-card.css';
     wrapper.append(title, content);
-    shadow.append(style, wrapper);
+    shadow.append(link, wrapper);
   }
 }
 
