@@ -12,10 +12,15 @@
   <h1>DMX</h1>
 </header>
 <main id="app">
-  <ui-card title="Akai APC40">
-    <p>Vista de la interfaz</p>
-    <ui-button label="Ir"></ui-button>
-  </ui-card>
+  <div id="home">
+    <ui-card title="Akai APC40">
+      <p>Vista de la interfaz</p>
+      <ui-button id="apc40-link" label="Ir"></ui-button>
+    </ui-card>
+  </div>
+  <div id="apc40-view" hidden>
+    <apc40-template></apc40-template>
+  </div>
 </main>
 <footer class="technologies">
   <span>Footer</span>
