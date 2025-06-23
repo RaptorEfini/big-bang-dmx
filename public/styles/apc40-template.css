@@ -1,0 +1,23 @@
+@import url('./spacing.css');
+
+.apc40 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'track master'
+    'clip master';
+  gap: var(--spacing-lg);
+}
+
+apc-track-section {
+  grid-area: track;
+}
+
+apc-clip-section {
+  grid-area: clip;
+}
+
+apc-master-section {
+  grid-area: master;
+}

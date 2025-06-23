@@ -12,3 +12,4 @@ export * from './molecules/TransportControls';
 export * from './organisms/APCTrackSection';
 export * from './organisms/APCMasterSection';
 export * from './organisms/APCClipSection';
+export * from './templates/APC40Template';
