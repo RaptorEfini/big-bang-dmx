@@ -2,10 +2,10 @@
 
 .knob {
   -webkit-appearance: none;
-  width: 40px;
-  height: 40px;
+  width: var(--size-knob);
+  height: var(--size-knob);
   border-radius: 50%;
-  background: var(--color-surface);
+  background: var(--color-knob-bg);
   border: 1px solid var(--color-border);
   position: relative;
   transition: all 0.2s ease;
@@ -14,7 +14,7 @@
 
 .knob:hover {
   border-color: var(--color-primary);
-  box-shadow: 0 0 8px var(--color-primary-glow), inset 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--glow-primary), inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .knob:focus {

@@ -24,4 +24,17 @@
   --glow-accent-1: 0 0 10px var(--color-accent-1), 0 0 20px rgba(255, 0, 255, 0.3);
   --glow-accent-2: 0 0 10px var(--color-accent-2), 0 0 20px rgba(0, 255, 0, 0.3);
   --glow-accent-3: 0 0 10px var(--color-accent-3), 0 0 20px rgba(255, 51, 0, 0.3);
+
+  /* Component colors */
+  --color-pad-bg: #1b1b2d;
+  --color-knob-bg: #141424;
+
+  /* Shared gradients */
+  --gradient-neon: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-accent-1),
+    var(--color-accent-2),
+    var(--color-accent-3)
+  );
 }

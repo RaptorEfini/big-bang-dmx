@@ -4,4 +4,9 @@
   --spacing-md: 16px;
   --spacing-lg: 24px;
   --spacing-xl: 40px;
+
+  /* Control sizes */
+  --size-knob: 40px;
+  --size-pad: 40px;
+  --size-fader-length: 100px;
 }

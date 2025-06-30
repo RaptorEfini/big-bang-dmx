@@ -3,7 +3,7 @@
 .fader {
   -webkit-appearance: none;
   width: 8px;
-  height: 100px;
+  height: var(--size-fader-length);
   background: linear-gradient(to bottom, var(--color-border), var(--color-background));
   border-radius: 4px;
   writing-mode: bt-lr;

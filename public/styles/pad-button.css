@@ -1,10 +1,10 @@
 @import url('./colors.css');
 
 .pad {
-  width: 40px;
-  height: 40px;
+  width: var(--size-pad);
+  height: var(--size-pad);
   border: 1px solid var(--color-border);
-  background: var(--color-button-bg);
+  background: var(--color-pad-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@
 
 .pad:hover {
   border-color: var(--color-primary);
-  box-shadow: 0 0 5px var(--color-primary-glow);
+  box-shadow: var(--glow-accent-1);
 }
 
 .pad.active {
