@@ -1,10 +1,27 @@
 :root {
-  --color-background: #000000;
-  --color-surface: rgba(255, 255, 255, 0.1);
-  --color-text: rgba(255, 255, 255, 0.87);
-  --color-primary: #00d1ff;
-  --color-primary-dark: #129cff;
-  --color-warning: #f0eb18;
-  --color-border: #444444;
-  --color-button-bg: rgba(25, 25, 28, 0.5);
+  /* Base colors */
+  --color-background: #0a0a0f;
+  --color-surface: rgba(20, 20, 35, 0.7);
+  --color-text: rgba(255, 255, 255, 0.95);
+
+  /* Neon primary colors */
+  --color-primary: #00ffff;
+  --color-primary-dark: #0088ff;
+  --color-primary-glow: rgba(0, 255, 255, 0.5);
+
+  /* Accent colors */
+  --color-accent-1: #ff00ff; /* Magenta */
+  --color-accent-2: #00ff00; /* Green */
+  --color-accent-3: #ff3300; /* Red-Orange */
+
+  /* Utility colors */
+  --color-warning: #ffff00;
+  --color-border: #333355;
+  --color-button-bg: rgba(25, 25, 40, 0.7);
+
+  /* Glow effects */
+  --glow-primary: 0 0 10px var(--color-primary), 0 0 20px rgba(0, 255, 255, 0.3);
+  --glow-accent-1: 0 0 10px var(--color-accent-1), 0 0 20px rgba(255, 0, 255, 0.3);
+  --glow-accent-2: 0 0 10px var(--color-accent-2), 0 0 20px rgba(0, 255, 0, 0.3);
+  --glow-accent-3: 0 0 10px var(--color-accent-3), 0 0 20px rgba(255, 51, 0, 0.3);
 }

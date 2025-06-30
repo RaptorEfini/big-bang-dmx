@@ -7,6 +7,20 @@
   border-radius: 50%;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
+  position: relative;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.knob:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 8px var(--color-primary-glow), inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.knob:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: var(--glow-primary), inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .knob::-webkit-slider-thumb {
@@ -16,4 +30,18 @@
   border-radius: 50%;
   background: var(--color-primary);
   cursor: pointer;
+  box-shadow: 0 0 5px var(--color-primary-glow);
+}
+
+/* Add a reflective surface effect */
+.knob::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
 }

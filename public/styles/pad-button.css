@@ -10,8 +10,29 @@
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pad:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px var(--color-primary-glow);
 }
 
 .pad.active {
   background: var(--color-primary);
+  box-shadow: var(--glow-primary);
+  border-color: var(--color-primary);
+}
+
+.pad::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
 }

@@ -29,9 +29,20 @@ body {
   min-height: 100vh;
   align-items: center;
 
-  background-image: url('background.svg');
+  /* Cyberpunk background with grid pattern and glows */
+  background-image: 
+    linear-gradient(rgba(16, 16, 30, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 16, 30, 0.05) 1px, transparent 1px),
+    url('background.svg'), 
+    radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.05), transparent 70%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 30, 0.9));
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 
+    20px 20px, 
+    20px 20px, 
+    contain, 
+    100% 100%, 
+    100% 100%;
 }
 
 h1 {
@@ -59,23 +70,7 @@ img {
   height: auto;
 }
 
-button {
-  font-family: 'JetBrains Mono', Inter, system-ui, sans-serif;
-  background-color: var(--color-button-bg);
-  cursor: pointer;
-  color: var(--color-text);
-}
-
-button:hover {
-  background-image: radial-gradient(
-    farthest-corner at 77% 83%,
-    var(--color-primary-dark) 2%,
-    var(--color-primary) 28%,
-    rgba(25, 25, 28, 0) 70%
-  );
-  border: 1px solid rgba(76, 166, 255, 0.2);
-  background-clip: padding-box;
-}
+/* Button styles moved to ui-button.css */
 
 .technologies {
   margin-bottom: 36px;
