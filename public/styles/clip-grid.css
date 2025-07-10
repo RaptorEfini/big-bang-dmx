@@ -1,9 +1,0 @@
-@import url('./spacing.css');
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(8, var(--size-pad));
-  grid-template-rows: repeat(5, var(--size-pad));
-  gap: var(--spacing-xs);
-  justify-content: center;
-}

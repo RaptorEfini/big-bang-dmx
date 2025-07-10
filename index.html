@@ -5,22 +5,32 @@
   <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WS playground</title>
+  <link rel="stylesheet" href="./ui/darkglow/style.css">
   <link rel="stylesheet" href="/style.css">
+  <script src="./ui/darkglow/darkglow.js"></script>
+  <script>
+    // The components are available under the global 'darkglow' namespace
+    darkglow.registerComponents();
+  </script>
 </head>
 <body>
 <header class="logo">
   <h1>DMX</h1>
 </header>
 <main id="app">
-  <div id="home">
-    <ui-card title="Akai APC40">
-      <p>Vista de la interfaz</p>
-      <ui-button id="apc40-link" label="Ir"></ui-button>
-    </ui-card>
-  </div>
-  <div id="apc40-view" hidden>
-    <apc40-template></apc40-template>
-  </div>
+  <darkglow-layout title="My Page">
+    <div slot="header">
+      <h1>My Application</h1>
+    </div>
+    <darkglow-container>
+      <h2>Buttons</h2>
+      <darkglow-button>Primary</darkglow-button>
+      <darkglow-button variant="secondary">Secondary</darkglow-button>
+      <darkglow-button variant="danger">Danger</darkglow-button>
+      <darkglow-button variant="ghost">Ghost</darkglow-button>
+    </darkglow-container>
+    <div slot="footer">Footer Content</div>
+  </darkglow-layout>
 </main>
 <footer class="technologies">
   <span>Footer</span>

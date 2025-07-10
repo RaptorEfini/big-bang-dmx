@@ -1,7 +1,0 @@
-@import url('./colors.css');
-
-.label {
-  font-family: 'JetBrains Mono', Inter, system-ui, sans-serif;
-  color: var(--color-text);
-  font-size: 12px;
-}
