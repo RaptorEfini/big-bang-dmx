@@ -7,27 +7,68 @@
   <title>WS playground</title>
   <link rel="stylesheet" href="./ui/darkglow/style.css">
   <link rel="stylesheet" href="/style.css">
-  <script src="./ui/darkglow/darkglow.js"></script>
-  <script>
-    // The components are available under the global 'darkglow' namespace
-    darkglow.registerComponents();
-  </script>
 </head>
 <body>
-<header class="logo">
-  <h1>DMX</h1>
-</header>
 <main id="app">
   <darkglow-layout title="My Page">
     <div slot="header">
       <h1>My Application</h1>
     </div>
     <darkglow-container>
-      <h2>Buttons</h2>
-      <darkglow-button>Primary</darkglow-button>
-      <darkglow-button variant="secondary">Secondary</darkglow-button>
-      <darkglow-button variant="danger">Danger</darkglow-button>
-      <darkglow-button variant="ghost">Ghost</darkglow-button>
+      <h2>CLIP LAUNCH</h2>
+      <darkglow-card>
+        <darkglow-grid columns="8" gap="5px">
+          <!-- Row 1 -->
+          <darkglow-pad number="1" variant="primary"></darkglow-pad>
+          <darkglow-pad number="2" variant="primary"></darkglow-pad>
+          <darkglow-pad number="3" variant="primary"></darkglow-pad>
+          <darkglow-pad number="4" variant="primary"></darkglow-pad>
+          <darkglow-pad number="5" variant="primary"></darkglow-pad>
+          <darkglow-pad number="6" variant="primary"></darkglow-pad>
+          <darkglow-pad number="7" variant="primary"></darkglow-pad>
+          <darkglow-pad number="8" variant="primary"></darkglow-pad>
+
+          <!-- Row 2 -->
+          <darkglow-pad number="9" variant="primary"></darkglow-pad>
+          <darkglow-pad number="10" variant="primary"></darkglow-pad>
+          <darkglow-pad number="11" variant="primary"></darkglow-pad>
+          <darkglow-pad number="12" variant="primary"></darkglow-pad>
+          <darkglow-pad number="13" variant="primary"></darkglow-pad>
+          <darkglow-pad number="14" variant="primary"></darkglow-pad>
+          <darkglow-pad number="15" variant="primary"></darkglow-pad>
+          <darkglow-pad number="16" variant="primary"></darkglow-pad>
+
+          <!-- Row 3 -->
+          <darkglow-pad number="17" variant="primary"></darkglow-pad>
+          <darkglow-pad number="18" variant="primary"></darkglow-pad>
+          <darkglow-pad number="19" variant="primary"></darkglow-pad>
+          <darkglow-pad number="20" variant="primary"></darkglow-pad>
+          <darkglow-pad number="21" variant="primary"></darkglow-pad>
+          <darkglow-pad number="22" variant="primary"></darkglow-pad>
+          <darkglow-pad number="23" variant="primary"></darkglow-pad>
+          <darkglow-pad number="24" variant="primary"></darkglow-pad>
+
+          <!-- Row 4 -->
+          <darkglow-pad number="25" variant="primary"></darkglow-pad>
+          <darkglow-pad number="26" variant="primary"></darkglow-pad>
+          <darkglow-pad number="27" variant="primary"></darkglow-pad>
+          <darkglow-pad number="28" variant="primary"></darkglow-pad>
+          <darkglow-pad number="29" variant="primary"></darkglow-pad>
+          <darkglow-pad number="30" variant="primary"></darkglow-pad>
+          <darkglow-pad number="31" variant="primary"></darkglow-pad>
+          <darkglow-pad number="32" variant="primary"></darkglow-pad>
+
+          <!-- Row 5 -->
+          <darkglow-pad number="33" variant="primary"></darkglow-pad>
+          <darkglow-pad number="34" variant="primary"></darkglow-pad>
+          <darkglow-pad number="35" variant="primary"></darkglow-pad>
+          <darkglow-pad number="36" variant="primary"></darkglow-pad>
+          <darkglow-pad number="37" variant="primary"></darkglow-pad>
+          <darkglow-pad number="38" variant="primary"></darkglow-pad>
+          <darkglow-pad number="39" variant="primary"></darkglow-pad>
+          <darkglow-pad number="40" variant="primary"></darkglow-pad>
+        </darkglow-grid>
+      </darkglow-card>
     </darkglow-container>
     <div slot="footer">Footer Content</div>
   </darkglow-layout>
@@ -35,6 +76,7 @@
 <footer class="technologies">
   <span>Footer</span>
 </footer>
+<script type="module" src="./init-darkglow.js"></script>
 <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
